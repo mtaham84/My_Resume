@@ -268,14 +268,24 @@ section {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 18px;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    padding: 10px 15px;
   }
 
   .navbar ul {
-    flex-direction: column;
+    flex-direction: row; 
     gap: 14px;
+  }
+
+  
+  .navbar::-webkit-scrollbar {
+    height: 6px;
+  }
+  .navbar::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 3px;
   }
 
   .text-about {
@@ -283,3 +293,4 @@ section {
     max-height: none;
   }
 }
+
