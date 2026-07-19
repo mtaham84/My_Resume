@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-
+  <title data-en="Contact | Taha Mousavi" data-fa="تماس | طاها موسوی">Contact | Taha Mousavi</title>
   <link rel="stylesheet" href="navbar.css">
-
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (Free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
 
 <div class="navbar">
   <span class="logo">Taha Mousavi</span>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+    <li><a href="about.html" data-en="About" data-fa="درباره من">About</a></li>
+    <li><a href="education.html" data-en="Education" data-fa="تحصیلات">Education</a></li>
+    <li><a href="portfolio.html" data-en="Portfolio" data-fa="نمونه‌کارها">Portfolio</a></li>
+    <li><a href="contact.html" class="active" data-en="Contact" data-fa="تماس">Contact</a></li>
   </ul>
+  <div class="navbar-controls">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="is-active">EN</button>
+      <button type="button" data-lang="fa">FA</button>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </div>
 
 <section class="contact-section">
-  <h2 class="h2txt">Contact Me</h2>
+  <h2 class="h2txt" data-en="Let's Connect" data-fa="بیایید در ارتباط باشیم">Let's Connect</h2>
 
-  <form class="contact-form" id="contact-form">
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" name="name" required>
+  <p style="text-align:center;color:var(--ink-soft);margin-bottom:40px;font-size:1.1rem;" data-en="You can reach me through any of the following channels." data-fa="از طریق هر یک از کانال‌های زیر می‌توانید با من در ارتباط باشید.">
+    You can reach me through any of the following channels.
+  </p>
+
+  <div class="contact-info">
+    <!-- Email -->
+    <div class="contact-card">
+      <span class="contact-card-icon"><i class="fas fa-envelope"></i></span>
+      <div class="contact-card-label" data-en="Email" data-fa="ایمیل">Email</div>
+      <div class="contact-card-value">
+        <a href="mailto:mtaha38461@gmail.com">mtaha38461@gmail.com</a>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label>Email</label>
-      <input type="email" name="email" required>
+    <!-- GitHub -->
+    <div class="contact-card">
+      <span class="contact-card-icon"><i class="fab fa-github"></i></span>
+      <div class="contact-card-label" data-en="GitHub" data-fa="گیت‌هاب">GitHub</div>
+      <div class="contact-card-value">
+        <a href="https://github.com/mtaham84" target="_blank">github.com/mtaham84</a>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
+    <!-- LinkedIn -->
+    <div class="contact-card">
+      <span class="contact-card-icon"><i class="fab fa-linkedin-in"></i></span>
+      <div class="contact-card-label" data-en="LinkedIn" data-fa="لینکدین">LinkedIn</div>
+      <div class="contact-card-value">
+        <a href="https://www.linkedin.com/in/taha-mousavi-875988193/" target="_blank">linkedin.com/in/taha-mousavi</a>
+      </div>
     </div>
 
-    <button type="submit">Send</button>
-  </form>
-
-  <p id="status-message"></p>
+    <!-- Telegram -->
+    <div class="contact-card">
+      <span class="contact-card-icon"><i class="fab fa-telegram-plane"></i></span>
+      <div class="contact-card-label" data-en="Telegram" data-fa="تلگرام">Telegram</div>
+      <div class="contact-card-value">
+        <a href="https://t.me/T_Mousavi84" target="_blank">@T_Mousavi84</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer class="site-footer">
-  <p>&copy; 2025 Taha Mousavi. All rights reserved.</p>
+  <p>Taha Mousavi</p>
+  <p data-en="© 2026 · All rights reserved." data-fa="© ۲۰۲۶ · تمامی حقوق محفوظ است.">&copy; 2026 · All rights reserved.</p>
 </footer>
 
-<script>
-  // Initialize EmailJS
-  (function () {
-    emailjs.init("I3wG6U7UW9678Mx62");
-  })();
-
-  // Handle form submit
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const status = document.getElementById("status-message");
-    status.innerText = "Sending... ⏳";
-
-    emailjs.sendForm(
-      "service_fgty65b",
-      "template_klptpqf",
-      this
-    ).then(
-      function () {
-        status.innerText = "Message sent successfully ✅";
-        status.style.color = "green";
-        document.getElementById("contact-form").reset();
-      },
-      function (error) {
-        status.innerText = "Failed to send message ❌";
-        status.style.color = "red";
-        console.error("EmailJS Error:", error);
-      }
-    );
-  });
-</script>
-
+<script src="Lang.JS" defer></script>
 </body>
 </html>

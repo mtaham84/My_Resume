@@ -1,49 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+
+  <title data-en="About Me | Taha Mousavi"
+         data-fa="درباره من | طاها موسوی">
+    About Me | Taha Mousavi
+  </title>
+
   <link rel="stylesheet" href="navbar.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
 <div class="navbar">
+
   <span class="logo">Taha Mousavi</span>
+
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li>
+      <a href="index.html"
+         data-en="Home"
+         data-fa="خانه">
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a href="about.html"
+         class="active"
+         data-en="About"
+         data-fa="درباره من">
+        About
+      </a>
+    </li>
+
+    <li>
+      <a href="education.html"
+         data-en="Education"
+         data-fa="تحصیلات">
+        Education
+      </a>
+    </li>
+
+    <li>
+      <a href="portfolio.html"
+         data-en="Portfolio"
+         data-fa="نمونه‌کارها">
+        Portfolio
+      </a>
+    </li>
+
+    <li>
+      <a href="contact.html"
+         data-en="Contact"
+         data-fa="تماس">
+        Contact
+      </a>
+    </li>
   </ul>
+
+  <div class="navbar-controls">
+
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button"
+              data-lang="en"
+              class="is-active">
+        EN
+      </button>
+
+      <button type="button"
+              data-lang="fa">
+        FA
+      </button>
+    </div>
+
+    <button class="hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
 </div>
 
+
 <section class="about-section">
+
+  <h2 class="h2txt"
+      data-en="About Me"
+      data-fa="درباره من">
+    About Me
+  </h2>
+
+
   <figure class="image-box">
-    <img src="myphoto.jpeg" alt="My Photo">
-    <figcaption>This is me!</figcaption>
+
+    <img src="myphoto.jpeg"
+         alt="Taha Mousavi">
+
+    <figcaption
+      data-en="— Taha Mousavi —"
+      data-fa="— طاها موسوی —">
+
+      — Taha Mousavi —
+
+    </figcaption>
+
   </figure>
 
-  <p class="text-about">
-    I'm Taha Mousavi, a Computer Engineering student with strong interests in
-    AI, numerical methods, robotics,NLP ,and machine learning.
-    I'm FullStack Developer and now i learning ML becuse i like it and i think AI will important from now
+
+  <p class="text-about"
+
+     data-en="I'm Taha Mousavi, a Computer Engineering student at the Iran University of Science and Technology (IUST), with a strong foundation in software development, algorithms, and problem-solving.
+
+I enjoy turning ideas into working software. My experience ranges from building real-world websites and backend systems with Django to developing algorithmic and machine learning projects using Python and C++. I have also worked on projects for real businesses, including designing and developing a digital presence for a cosmetics and skincare company.
+
+My current focus is moving toward Artificial Intelligence, Machine Learning, and intelligent systems. I am particularly interested in understanding how data, algorithms, and software engineering can come together to solve practical problems.
+
+Alongside my technical work, I have served as a Teaching Assistant for Python Programming at IUST, helping students understand programming concepts, debug their code, and approach problems more effectively.
+
+I am a self-driven learner who enjoys going beyond tutorials and building things from scratch. Whether I am working with algorithms, backend systems, Linux environments, data, or machine learning models, I am motivated by the same goal: understanding how things work and using that knowledge to build something useful."
+
+     data-fa="من طاها موسوی هستم، دانشجوی مهندسی کامپیوتر در دانشگاه علم و صنعت ایران، با پایه‌ای قوی در توسعه نرم‌افزار، الگوریتم‌ها و حل مسئله.
+
+من از تبدیل ایده‌ها به نرم‌افزارهای واقعی لذت می‌برم. تجربه‌ام از ساخت وب‌سایت‌ها و سیستم‌های بک‌اند واقعی با Django تا توسعه پروژه‌های الگوریتمی و یادگیری ماشین با Python و C++ را شامل می‌شود. همچنین روی پروژه‌های واقعی برای کسب‌وکارها کار کرده‌ام؛ از جمله طراحی و توسعه حضور دیجیتال یک شرکت فعال در حوزه محصولات آرایشی و مراقبت از پوست.
+
+تمرکز فعلی من به سمت هوش مصنوعی، یادگیری ماشین و سیستم‌های هوشمند در حال حرکت است. علاقه‌مندم درک کنم که چگونه داده، الگوریتم‌ها و مهندسی نرم‌افزار می‌توانند در کنار یکدیگر برای حل مسائل واقعی به کار گرفته شوند.
+
+در کنار فعالیت‌های فنی، به‌عنوان دستیار آموزشی برنامه‌نویسی پایتون در دانشگاه علم و صنعت فعالیت داشته‌ام و به دانشجویان در یادگیری مفاهیم برنامه‌نویسی، دیباگ کردن کد و حل مسئله کمک کرده‌ام.
+
+من یک یادگیرنده مستقل هستم که ترجیح می‌دهم فراتر از آموزش‌های تئوری بروم و چیزها را از پایه بسازم. چه در حال کار با الگوریتم‌ها، سیستم‌های بک‌اند، محیط‌های لینوکس، داده یا مدل‌های یادگیری ماشین باشم، هدفم یکسان است: درک عمیق نحوه کار سیستم‌ها و استفاده از این دانش برای ساختن چیزهای مفید.">
+
+    I'm Taha Mousavi, a Computer Engineering student at the Iran University of Science and Technology (IUST), with a strong foundation in software development, algorithms, and problem-solving.
+
+    I enjoy turning ideas into working software. My experience ranges from building real-world websites and backend systems with Django to developing algorithmic and machine learning projects using Python and C++. I have also worked on projects for real businesses, including designing and developing a digital presence for a cosmetics and skincare company.
+
+    My current focus is moving toward Artificial Intelligence, Machine Learning, and intelligent systems. I am particularly interested in understanding how data, algorithms, and software engineering can come together to solve practical problems.
+
+    Alongside my technical work, I have served as a Teaching Assistant for Python Programming at IUST, helping students understand programming concepts, debug their code, and approach problems more effectively.
+
+    I am a self-driven learner who enjoys going beyond tutorials and building things from scratch. Whether I am working with algorithms, backend systems, Linux environments, data, or machine learning models, I am motivated by the same goal: understanding how things work and using that knowledge to build something useful.
+
   </p>
+
+
+  <a href="#skills-more"
+     class="more-btn"
+     data-en="Explore More"
+     data-fa="بیشتر بدانید">
+
+    Explore More
+
+  </a>
+
 </section>
 
-<section>
-  <h2 class="h2txt">Skills</h2>
+
+<section id="skills-more">
+
+  <h2 class="h2txt"
+      data-en="Technical Skills"
+      data-fa="مهارت‌های فنی">
+
+    Technical Skills
+
+  </h2>
+
+
   <ul class="skills-list">
-    <li>HTML/CSS</li>
-    <li>Python</li>
-    <li>C++</li>
-    <li>Django</li>
-    <li>Flutter</li>
+
+    <li>
+      Python
+
+      <div class="skill-details"
+           data-en="Data science, machine learning, backend development"
+           data-fa="علم داده، یادگیری ماشین و توسعه بک‌اند">
+
+        Data science, machine learning, backend development
+
+      </div>
+    </li>
+
+
+    <li>
+      C++
+
+      <div class="skill-details"
+           data-en="Object-oriented programming, algorithms and problem-solving"
+           data-fa="برنامه‌نویسی شی‌گرا، الگوریتم‌ها و حل مسئله">
+
+        Object-oriented programming, algorithms and problem-solving
+
+      </div>
+    </li>
+
+
+    <li>
+      C
+
+      <div class="skill-details"
+           data-en="Fundamentals of programming and systems-level development"
+           data-fa="مبانی برنامه‌نویسی و توسعه در سطح سیستم">
+
+        Fundamentals of programming and systems-level development
+
+      </div>
+    </li>
+
+
+    <li>
+      Django & REST APIs
+
+      <div class="skill-details"
+           data-en="Backend systems, web applications and API development"
+           data-fa="سیستم‌های بک‌اند، اپلیکیشن‌های وب و توسعه API">
+
+        Backend systems, web applications and API development
+
+      </div>
+    </li>
+
+
+    <li>
+      HTML / CSS / JavaScript
+
+      <div class="skill-details"
+           data-en="Responsive and modern web interfaces"
+           data-fa="رابط‌های وب مدرن و ریسپانسیو">
+
+        Responsive and modern web interfaces
+
+      </div>
+    </li>
+
+
+    <li>
+      Data & Machine Learning
+
+      <div class="skill-details"
+           data-en="NumPy, Pandas, Scikit-learn, Random Forest and data analysis"
+           data-fa="NumPy، Pandas، Scikit-learn، Random Forest و تحلیل داده">
+
+        NumPy, Pandas, Scikit-learn, Random Forest and data analysis
+
+      </div>
+    </li>
+
+
+    <li>
+      Linux & Bash
+
+      <div class="skill-details"
+           data-en="Linux environments, command-line tools and system administration"
+           data-fa="محیط لینوکس، ابزارهای خط فرمان و مدیریت سیستم">
+
+        Linux environments, command-line tools and system administration
+
+      </div>
+    </li>
+
+
+    <li>
+      Git & GitHub
+
+      <div class="skill-details"
+           data-en="Version control and collaborative software development"
+           data-fa="کنترل نسخه و توسعه نرم‌افزار مشارکتی">
+
+        Version control and collaborative software development
+
+      </div>
+    </li>
+
+
+    <li>
+      Docker & Deployment
+
+      <div class="skill-details"
+           data-en="Containerization and deployment workflows"
+           data-fa="کانتینرسازی و فرایندهای استقرار">
+
+        Containerization and deployment workflows
+
+      </div>
+    </li>
+
+
+    <li>
+      Flutter
+
+      <div class="skill-details"
+           data-en="Cross-platform application development"
+           data-fa="توسعه اپلیکیشن‌های چندسکویی">
+
+        Cross-platform application development
+
+      </div>
+    </li>
+
   </ul>
+
+
+  <p
+
+    style="max-width: 800px;
+           margin: 3rem auto 0;
+           text-align: justify;
+           color: var(--ink-soft);
+           font-size: 16px;
+           line-height: 1.9;
+           background: var(--card-bg);
+           padding: 32px;
+           border-radius: 16px;
+           border: 1px solid var(--card-border);
+           backdrop-filter: blur(20px);"
+
+    data-en="I began my programming journey during high school with C++, progressing to object-oriented programming, and later expanded my skills with Python. My early projects included an educational website built with Flutter, which I presented at Hamrah-e Aval (MCI).
+
+At university, I developed a strong foundation in programming, data structures, algorithms, mathematics, and computer systems. I achieved a 19/20 in Fundamentals of Programming and later became a Teaching Assistant for the same course.
+
+Since then, I have worked on a range of projects, from C++ algorithmic applications and data-processing systems to Django-based web applications and real-world business websites. I am currently expanding my expertise in Machine Learning and Artificial Intelligence, with a particular interest in building intelligent systems that can solve practical problems."
+
+    data-fa="مسیر برنامه‌نویسی‌ام را در دوران دبیرستان با ++C آغاز کردم و تا مفاهیم برنامه‌نویسی شی‌گرا پیش رفتم و سپس مهارت‌هایم را با Python گسترش دادم. از پروژه‌های اولیه‌ام می‌توان به یک وب‌سایت آموزشی ساخته‌شده با Flutter اشاره کرد که آن را در همراه اول ارائه کردم.
+
+در دانشگاه، پایه‌ای قوی در برنامه‌نویسی، ساختمان داده، الگوریتم‌ها، ریاضیات و سیستم‌های کامپیوتری ایجاد کردم. در درس مبانی برنامه‌نویسی نمره ۱۹ از ۲۰ کسب کردم و بعدها به‌عنوان دستیار آموزشی همان درس فعالیت کردم.
+
+از آن زمان روی طیف متنوعی از پروژه‌ها کار کرده‌ام؛ از برنامه‌های الگوریتمی C++ و سیستم‌های پردازش داده گرفته تا اپلیکیشن‌های وب مبتنی بر Django و وب‌سایت‌های واقعی برای کسب‌وکارها. در حال حاضر تمرکز خود را بر یادگیری ماشین و هوش مصنوعی گسترش می‌دهم و علاقه‌مندم سیستم‌های هوشمندی بسازم که بتوانند مسائل واقعی را حل کنند.">
+
+    I began my programming journey during high school with C++, progressing to object-oriented programming, and later expanded my skills with Python. My early projects included an educational website built with Flutter, which I presented at Hamrah-e Aval (MCI).
+
+    At university, I developed a strong foundation in programming, data structures, algorithms, mathematics, and computer systems. I achieved a 19/20 in Fundamentals of Programming and later became a Teaching Assistant for the same course.
+
+    Since then, I have worked on a range of projects, from C++ algorithmic applications and data-processing systems to Django-based web applications and real-world business websites. I am currently expanding my expertise in Machine Learning and Artificial Intelligence, with a particular interest in building intelligent systems that can solve practical problems.
+
+  </p>
+
 </section>
+
 
 <footer class="site-footer">
-  <p>&copy; 2025 Taha Mousavi. All rights reserved.</p>
+
+  <p>Taha Mousavi</p>
+
+  <p
+    data-en="© 2026 · All rights reserved."
+    data-fa="© ۲۰۲۶ · تمامی حقوق محفوظ است.">
+
+    &copy; 2026 · All rights reserved.
+
+  </p>
+
+  <p
+    data-en="Designed & developed with passion by Taha Mousavi."
+    data-fa="طراحی و توسعه با علاقه توسط طاها موسوی.">
+
+    Designed & developed with passion by Taha Mousavi.
+
+  </p>
+
 </footer>
+
+
+<script src="Lang.JS" defer></script>
 
 </body>
 </html>

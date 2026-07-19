@@ -1,74 +1,850 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+
+  <title
+    data-en="Portfolio | Taha Mousavi"
+    data-fa="نمونه‌کارها | طاها موسوی">
+
+    Portfolio | Taha Mousavi
+
+  </title>
+
   <link rel="stylesheet" href="navbar.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
 </head>
+
+
 <body>
 
 
+<!-- ================= NAVBAR ================= -->
+
 <div class="navbar">
-  <span class="logo">Taha Mousavi</span>
+
+  <span class="logo">
+    Taha Mousavi
+  </span>
+
+
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
+
+    <li>
+      <a
+        href="index.html"
+        data-en="Home"
+        data-fa="خانه">
+
+        Home
+
+      </a>
+    </li>
+
+
+    <li>
+      <a
+        href="about.html"
+        data-en="About"
+        data-fa="درباره من">
+
+        About
+
+      </a>
+    </li>
+
+
+    <li>
+      <a
+        href="education.html"
+        data-en="Education"
+        data-fa="تحصیلات">
+
+        Education
+
+      </a>
+    </li>
+
+
+    <li>
+      <a
+        href="portfolio.html"
+        class="active"
+        data-en="Portfolio"
+        data-fa="نمونه‌کارها">
+
+        Portfolio
+
+      </a>
+    </li>
+
+
+    <li>
+      <a
+        href="contact.html"
+        data-en="Contact"
+        data-fa="تماس">
+
+        Contact
+
+      </a>
+    </li>
+
   </ul>
+
+
+  <div class="navbar-controls">
+
+
+    <div
+      class="lang-toggle"
+      role="group"
+      aria-label="Language">
+
+
+      <button
+        type="button"
+        data-lang="en">
+
+        EN
+
+      </button>
+
+
+      <button
+        type="button"
+        data-lang="fa">
+
+        FA
+
+      </button>
+
+
+    </div>
+
+
+    <button
+      class="hamburger"
+      aria-label="Toggle menu"
+      aria-expanded="false">
+
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+
+    </button>
+
+
+  </div>
+
+
 </div>
 
 
-<section class="portfolio">
-  <h2 class="h2txt">My Projects</h2>
+<!-- ================= PORTFOLIO ================= -->
 
-  
+<section class="portfolio">
+
+
+  <span
+    class="section-kicker"
+    data-en="Selected Work"
+    data-fa="پروژه‌های منتخب">
+
+    Selected Work
+
+  </span>
+
+
+  <h1
+    class="portfolio-title"
+    data-en="Projects built through engineering, experimentation, and curiosity."
+
+    data-fa="پروژه‌هایی ساخته‌شده با مهندسی، آزمایش و کنجکاوی.">
+
+    Projects built through engineering, experimentation, and curiosity.
+
+  </h1>
+
+
+  <p
+    class="portfolio-intro"
+    data-en="A selection of software, backend, machine learning, and algorithmic projects that reflect my approach to turning ideas into working systems."
+
+    data-fa="مجموعه‌ای از پروژه‌های نرم‌افزاری، بک‌اند، یادگیری ماشین و الگوریتمی که رویکرد من در تبدیل ایده‌ها به سیستم‌های واقعی را نشان می‌دهند.">
+
+    A selection of software, backend, machine learning, and algorithmic projects that reflect my approach to turning ideas into working systems.
+
+  </p>
+
+
   <ul class="project-list">
 
+
+    <!-- ================================================= -->
+    <!-- 1. RAYKA SHIMI SABA -->
+    <!-- ================================================= -->
+
+
     <li>
-      <strong>Helli8 Learning Platform</strong>
-      <p>
-        An educational system for high school students covering math and physics,
-        developed as a real-world collaborative project.
+
+
+      <strong
+        data-en="Rayka Shimi Saba — Brand Website"
+        data-fa="رایکا شیمی صبا — وب‌سایت برند">
+
+        Rayka Shimi Saba — Brand Website
+
+      </strong>
+
+
+      <p
+        data-en="Designed and developed a real-world digital presence for a cosmetics and skincare company. The project involved translating the company's brand identity into a modern responsive website, organizing product and company information, and building a clean user experience suitable for a professional commercial brand."
+
+        data-fa="طراحی و توسعه حضور دیجیتال یک شرکت واقعی در حوزه محصولات آرایشی و مراقبت از پوست. این پروژه شامل تبدیل هویت برند به یک وب‌سایت مدرن و ریسپانسیو، سازمان‌دهی اطلاعات محصولات و شرکت و ساخت یک تجربه کاربری تمیز و مناسب برای یک برند تجاری حرفه‌ای بود.">
+
+        Designed and developed a real-world digital presence for a cosmetics and skincare company. The project involved translating the company's brand identity into a modern responsive website, organizing product and company information, and building a clean user experience suitable for a professional commercial brand.
+
       </p>
-      <a class="project-link"
-         href="https://github.com/ManiTanz/Helli8Project"
-         target="_blank">
+
+
+      <div class="project-stack">
+
+        <span>HTML</span>
+
+        <span>CSS</span>
+
+        <span>JavaScript</span>
+
+        <span>Responsive Design</span>
+
+        <span>Branding</span>
+
+      </div>
+
+
+      <a
+        class="project-link"
+        href="https://raykashimisaba.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="Visit Website"
+        data-fa="مشاهده وب‌سایت">
+
+        Visit Website
+
+      </a>
+
+
+    </li>
+
+
+    <!-- ================================================= -->
+    <!-- 2. SELF-ADAPTIVE ML TRADING SYSTEM -->
+    <!-- ================================================= -->
+
+
+    <li class="featured-project">
+
+
+      <div class="project-header">
+
+
+        <strong
+          data-en="Self-Adaptive Machine Learning Trading System"
+          data-fa="سیستم معامله‌گری خودسازگار مبتنی بر یادگیری ماشین">
+
+          Self-Adaptive Machine Learning Trading System
+
+        </strong>
+
+
+        <span
+          class="project-badge"
+          data-en="Featured AI Project"
+          data-fa="پروژه شاخص AI">
+
+          Featured AI Project
+
+        </span>
+
+
+      </div>
+
+
+      <p
+        data-en="An end-to-end machine learning-driven algorithmic trading system designed to predict next-day stock price direction and translate probabilistic predictions into executable trading decisions. The project goes beyond a typical academic ML experiment by implementing a complete pipeline that includes feature engineering, time-series-aware training, periodic model retraining, backtesting, dynamic risk management, position management, future trend forecasting, and an interactive graphical interface."
+
+        data-fa="یک سیستم کامل معامله‌گری الگوریتمی مبتنی بر یادگیری ماشین که برای پیش‌بینی جهت حرکت قیمت سهام در روز بعد و تبدیل پیش‌بینی‌های احتمالی به تصمیم‌های واقعی معاملاتی طراحی شده است. این پروژه فراتر از یک پروژه معمول دانشگاهی یادگیری ماشین است و یک Pipeline کامل شامل مهندسی ویژگی، آموزش آگاه از ماهیت سری‌های زمانی، بازآموزی دوره‌ای مدل، بک‌تست، مدیریت ریسک پویا، مدیریت موقعیت، پیش‌بینی روند آینده و رابط گرافیکی تعاملی را پیاده‌سازی می‌کند.">
+
+        An end-to-end machine learning-driven algorithmic trading system designed to predict next-day stock price direction and translate probabilistic predictions into executable trading decisions. The project goes beyond a typical academic ML experiment by implementing a complete pipeline that includes feature engineering, time-series-aware training, periodic model retraining, backtesting, dynamic risk management, position management, future trend forecasting, and an interactive graphical interface.
+
+      </p>
+
+
+      <div class="project-details">
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Machine Learning Model"
+            data-fa="مدل یادگیری ماشین">
+
+            Machine Learning Model
+
+          </strong>
+
+
+          <span
+            data-en="Random Forest classifier with 150 trees, maximum depth of 10, and balanced class weights, selected for robustness against overfitting in noisy financial data."
+
+            data-fa="مدل Random Forest با ۱۵۰ درخت، حداکثر عمق ۱۰ و وزن‌دهی متعادل کلاس‌ها که به دلیل مقاومت مناسب در برابر بیش‌برازش در داده‌های نویزی مالی انتخاب شده است.">
+
+            Random Forest classifier with 150 trees, maximum depth of 10, and balanced class weights, selected for robustness against overfitting in noisy financial data.
+
+          </span>
+
+
+        </div>
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Feature Engineering"
+            data-fa="مهندسی ویژگی">
+
+            Feature Engineering
+
+          </strong>
+
+
+          <span
+            data-en="20+ technical and statistical features including lagged returns, SMA, EMA, MACD, RSI, Bollinger Bands, stochastic indicators, volatility, volume ratios, momentum, and ROC."
+
+            data-fa="بیش از ۲۰ ویژگی تکنیکال و آماری شامل بازده‌های تأخیری، SMA، EMA، MACD، RSI، Bollinger Bands، اندیکاتورهای Stochastic، نوسان، نسبت حجم، Momentum و ROC.">
+
+            20+ technical and statistical features including lagged returns, SMA, EMA, MACD, RSI, Bollinger Bands, stochastic indicators, volatility, volume ratios, momentum, and ROC.
+
+          </span>
+
+
+        </div>
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Adaptive Training Pipeline"
+            data-fa="Pipeline آموزش سازگار">
+
+            Adaptive Training Pipeline
+
+          </strong>
+
+
+          <span
+            data-en="The model is periodically retrained every 3–5 trading days using historical data available up to each prediction point, allowing the system to adapt to changing market regimes."
+
+            data-fa="مدل هر ۳ تا ۵ روز معاملاتی به‌صورت دوره‌ای با استفاده از داده‌های تاریخی موجود تا نقطه پیش‌بینی بازآموزی می‌شود تا سیستم بتواند خود را با تغییر رژیم‌های بازار سازگار کند.">
+
+            The model is periodically retrained every 3–5 trading days using historical data available up to each prediction point, allowing the system to adapt to changing market regimes.
+
+          </span>
+
+
+        </div>
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Backtesting & No Look-Ahead Bias"
+            data-fa="بک‌تست و جلوگیری از Look-Ahead Bias">
+
+            Backtesting & No Look-Ahead Bias
+
+          </strong>
+
+
+          <span
+            data-en="Each prediction is trained only on information available before that trading day, preventing look-ahead bias and respecting the chronological nature of financial data."
+
+            data-fa="هر پیش‌بینی فقط با اطلاعات موجود پیش از همان روز معاملاتی آموزش داده می‌شود و با رعایت ماهیت زمانی داده‌های مالی از Look-Ahead Bias جلوگیری می‌شود.">
+
+            Each prediction is trained only on information available before that trading day, preventing look-ahead bias and respecting the chronological nature of financial data.
+
+          </span>
+
+
+        </div>
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Risk Management"
+            data-fa="مدیریت ریسک">
+
+            Risk Management
+
+          </strong>
+
+
+          <span
+            data-en="Dynamic stop-loss and take-profit levels based on ATR, combined with a dedicated position management system for converting model predictions into disciplined trading actions."
+
+            data-fa="سطوح پویا برای Stop-Loss و Take-Profit بر اساس ATR، همراه با یک سیستم اختصاصی مدیریت موقعیت برای تبدیل پیش‌بینی‌های مدل به تصمیم‌های معاملاتی منظم و کنترل‌شده.">
+
+            Dynamic stop-loss and take-profit levels based on ATR, combined with a dedicated position management system for converting model predictions into disciplined trading actions.
+
+          </span>
+
+
+        </div>
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Future Trend Forecasting"
+            data-fa="پیش‌بینی روند آینده">
+
+            Future Trend Forecasting
+
+          </strong>
+
+
+          <span
+            data-en="A recursive Random Forest regression system forecasts the next 50 trading days and visualizes confidence intervals together with support and resistance levels."
+
+            data-fa="یک سیستم رگرسیون بازگشتی مبتنی بر Random Forest، ۵۰ روز معاملاتی آینده را پیش‌بینی کرده و بازه‌های اطمینان را همراه با سطوح Support و Resistance نمایش می‌دهد.">
+
+            A recursive Random Forest regression system forecasts the next 50 trading days and visualizes confidence intervals together with support and resistance levels.
+
+          </span>
+
+
+        </div>
+
+
+        <div class="project-detail">
+
+
+          <strong
+            data-en="Interactive Application"
+
+            data-fa="اپلیکیشن تعاملی">
+
+            Interactive Application
+
+          </strong>
+
+
+          <span
+            data-en="A Tkinter-based GUI provides date-range selection, live trade tables, equity curves, and interactive Matplotlib visualizations with zoom and pan capabilities."
+
+            data-fa="رابط گرافیکی مبتنی بر Tkinter شامل انتخاب بازه زمانی، جدول معاملات، Equity Curve و نمودارهای تعاملی Matplotlib با قابلیت Zoom و Pan است.">
+
+            A Tkinter-based GUI provides date-range selection, live trade tables, equity curves, and interactive Matplotlib visualizations with zoom and pan capabilities.
+
+          </span>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="project-stack">
+
+
+        <span>Python</span>
+
+        <span>pandas</span>
+
+        <span>NumPy</span>
+
+        <span>scikit-learn</span>
+
+        <span>Random Forest</span>
+
+        <span>Matplotlib</span>
+
+        <span>Tkinter</span>
+
+        <span>Algorithmic Trading</span>
+
+
+      </div>
+
+
+      <p
+        class="project-note"
+        data-en="The system was trained and evaluated using more than a decade of daily AAPL market data, with dedicated attention to preventing data leakage, reducing over-optimization, and handling the non-stationary nature of financial markets."
+
+        data-fa="این سیستم با استفاده از بیش از یک دهه داده روزانه سهام AAPL آموزش و ارزیابی شده و تمرکز ویژه‌ای بر جلوگیری از نشت داده، کاهش بیش‌بهینه‌سازی و مدیریت ماهیت غیرایستای بازارهای مالی داشته است.">
+
+        The system was trained and evaluated using more than a decade of daily AAPL market data, with dedicated attention to preventing data leakage, reducing over-optimization, and handling the non-stationary nature of financial markets.
+
+      </p>
+
+
+      <a
+        class="project-link"
+        href="https://github.com/mtaham84/Algorithmic_AI_and_covid_analays"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="View Project on GitHub"
+        data-fa="مشاهده پروژه در گیت‌هاب">
+
+        View Project on GitHub
+
+      </a>
+
+
+    </li>
+
+
+    <!-- ================================================= -->
+    <!-- 3. SPARK -->
+    <!-- ================================================= -->
+
+
+    <li>
+
+
+      <strong
+        data-en="Spark — Entertainment & Activity Booking Platform"
+        data-fa="Spark — پلتفرم تفریح و رزرو فعالیت">
+
+        Spark — Entertainment & Activity Booking Platform
+
+      </strong>
+
+
+      <p
+        data-en="A Django-based platform designed to help users discover, explore, and book entertainment and leisure activities. The project focuses on building a structured backend for activity discovery and reservation, organizing activities and services, managing user interactions, and creating a scalable foundation for future integrations such as location-based services and external APIs. The project involved backend architecture, database modeling, business logic, and API-oriented development using Django. The source code is kept private due to security and project confidentiality requirements, but a technical demonstration or detailed discussion of the implementation can be provided upon request."
+
+        data-fa="یک پلتفرم مبتنی بر Django برای کمک به کاربران در کشف، بررسی و رزرو فعالیت‌های تفریحی و سرگرمی. تمرکز پروژه بر ساخت یک بک‌اند ساختاریافته برای کشف و رزرو فعالیت‌ها، سازمان‌دهی فعالیت‌ها و خدمات، مدیریت تعاملات کاربران و ایجاد زیرساختی قابل توسعه برای اتصال‌های آینده مانند سرویس‌های مکان‌محور و APIهای خارجی است. این پروژه شامل طراحی معماری بک‌اند، مدل‌سازی پایگاه داده، پیاده‌سازی منطق کسب‌وکار و توسعه مبتنی بر API با استفاده از Django بوده است. کد منبع به دلیل الزامات امنیتی و محرمانگی پروژه خصوصی نگه داشته شده، اما امکان ارائه دمو یا توضیح فنی دقیق پیاده‌سازی در صورت درخواست وجود دارد.">
+
+        A Django-based platform designed to help users discover, explore, and book entertainment and leisure activities. The project focuses on building a structured backend for activity discovery and reservation, organizing activities and services, managing user interactions, and creating a scalable foundation for future integrations such as location-based services and external APIs. The project involved backend architecture, database modeling, business logic, and API-oriented development using Django. The source code is kept private due to security and project confidentiality requirements, but a technical demonstration or detailed discussion of the implementation can be provided upon request.
+
+      </p>
+
+
+      <div class="project-stack">
+
+        <span>Python</span>
+
+        <span>Django</span>
+
+        <span>Backend</span>
+
+        <span>Database Design</span>
+
+        <span>APIs</span>
+
+      </div>
+
+
+      <span
+        class="project-link"
+        data-en="Private Repository · Technical Details Available Upon Request"
+        data-fa="مخزن خصوصی · جزئیات فنی در صورت درخواست">
+
+        Private Repository · Technical Details Available Upon Request
+
+      </span>
+
+
+    </li>
+
+
+    <!-- ================================================= -->
+    <!-- 4. HELLI8 -->
+    <!-- ================================================= -->
+
+
+    <li>
+
+
+      <strong
+        data-en="Helli8 Learning Platform"
+        data-fa="پلتفرم آموزشی Helli8">
+
+        Helli8 Learning Platform
+
+      </strong>
+
+
+      <p
+        data-en="A collaborative educational platform designed for high-school students, focused on mathematics and physics. The project involved team-based software development, designing a structured learning experience, and building a digital platform for educational content and student interaction."
+
+        data-fa="یک پلتفرم آموزشی مشارکتی برای دانش‌آموزان دبیرستانی با تمرکز بر ریاضی و فیزیک. این پروژه شامل توسعه نرم‌افزار تیمی، طراحی یک تجربه یادگیری ساختاریافته و ساخت یک پلتفرم دیجیتال برای محتوای آموزشی و تعامل دانش‌آموزان بود.">
+
+        A collaborative educational platform designed for high-school students, focused on mathematics and physics. The project involved team-based software development, designing a structured learning experience, and building a digital platform for educational content and student interaction.
+
+      </p>
+
+
+      <div class="project-stack">
+
+        <span>Software Development</span>
+
+        <span>Teamwork</span>
+
+        <span>Education Technology</span>
+
+      </div>
+
+
+      <a
+        class="project-link"
+        href="https://github.com/ManiTanz/Helli8Project"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="View on GitHub"
+        data-fa="مشاهده در گیت‌هاب">
+
         View on GitHub
+
       </a>
+
+
     </li>
+
+
+    <!-- ================================================= -->
+    <!-- 5. SHOPPING APPLICATION -->
+    <!-- ================================================= -->
+
 
     <li>
-      <strong>raycaster (C++)</strong>
-      <p>
-        A complete chess engine with AI decision-making, board evaluation,
-        and move generation implemented in C++.
+
+
+      <strong
+        data-en="Shopping Application"
+        data-fa="اپلیکیشن فروشگاهی">
+
+        Shopping Application
+
+      </strong>
+
+
+      <p
+        data-en="A software project focused on implementing the core structure of an online shopping application, including product organization, application logic, and a structured user-facing shopping workflow."
+
+        data-fa="یک پروژه نرم‌افزاری با تمرکز بر پیاده‌سازی ساختار اصلی یک اپلیکیشن خرید آنلاین، شامل سازمان‌دهی محصولات، منطق برنامه و یک گردش‌کار ساختاریافته برای تجربه خرید کاربر.">
+
+        A software project focused on implementing the core structure of an online shopping application, including product organization, application logic, and a structured user-facing shopping workflow.
+
       </p>
-      <a class="project-link" href="https://github.com/mtaham84/My-Raycaster-Launch">
-        View Details
+
+
+      <div class="project-stack">
+
+        <span>Python</span>
+
+        <span>Application Logic</span>
+
+        <span>Software Development</span>
+
+      </div>
+
+
+      <a
+        class="project-link"
+        href="https://github.com/mtaham84/shopping1"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="View on GitHub"
+        data-fa="مشاهده در گیت‌هاب">
+
+        View on GitHub
+
       </a>
+
+
     </li>
 
-    
+
+    <!-- ================================================= -->
+    <!-- 6. START ML -->
+    <!-- ================================================= -->
+
 
     <li>
-      <strong>Django for Shopping Website</strong>
-      <p>
-        this website developing now for one company in cosmetics products.
+
+
+      <strong
+        data-en="Start ML — Data Processing & Trading Signals"
+        data-fa="Start ML — پردازش داده و سیگنال‌های معاملاتی">
+
+        Start ML — Data Processing & Trading Signals
+
+      </strong>
+
+
+      <p
+        data-en="An early data-processing project focused on working with market data and building a rule-based trading advisor. The project explores data analysis, indicator-based decision logic, and the foundations of transforming raw data into actionable signals."
+
+        data-fa="یک پروژه اولیه در مسیر پردازش داده با تمرکز بر کار با داده‌های بازار و ساخت یک سیستم پیشنهاددهنده معاملاتی مبتنی بر قوانین. این پروژه تحلیل داده، منطق تصمیم‌گیری مبتنی بر اندیکاتورها و تبدیل داده خام به سیگنال‌های قابل استفاده را بررسی می‌کند.">
+
+        An early data-processing project focused on working with market data and building a rule-based trading advisor. The project explores data analysis, indicator-based decision logic, and the foundations of transforming raw data into actionable signals.
+
       </p>
-      <a class="project-link" href="https://github.com/mtaham84/Zibasazz">
-        View Details
+
+
+      <div class="project-stack">
+
+        <span>Python</span>
+
+        <span>pandas</span>
+
+        <span>Data Analysis</span>
+
+      </div>
+
+
+      <a
+        class="project-link"
+        href="https://github.com/mtaham84/startML_Pandas"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="View on GitHub"
+        data-fa="مشاهده در گیت‌هاب">
+
+        View on GitHub
+
       </a>
+
+
     </li>
+
+
+    <!-- ================================================= -->
+    <!-- 7. C++ RAYCASTER -->
+    <!-- ================================================= -->
+
+
+    <li>
+
+
+      <strong
+        data-en="C++ Raycaster Engine"
+        data-fa="موتور Raycaster با ++C">
+
+        C++ Raycaster Engine
+
+      </strong>
+
+
+      <p
+        data-en="A C++ graphics programming project focused on implementing raycasting concepts, spatial calculations, and real-time scene generation. The project demonstrates low-level programming, mathematical reasoning, and the practical application of computational geometry."
+
+        data-fa="یک پروژه برنامه‌نویسی گرافیکی با ++C با تمرکز بر پیاده‌سازی مفاهیم Raycasting، محاسبات فضایی و تولید صحنه‌های بلادرنگ. این پروژه توانایی برنامه‌نویسی سطح پایین، استدلال ریاضی و استفاده عملی از هندسه محاسباتی را نشان می‌دهد.">
+
+        A C++ graphics programming project focused on implementing raycasting concepts, spatial calculations, and real-time scene generation. The project demonstrates low-level programming, mathematical reasoning, and the practical application of computational geometry.
+
+      </p>
+
+
+      <div class="project-stack">
+
+        <span>C++</span>
+
+        <span>Algorithms</span>
+
+        <span>Computational Geometry</span>
+
+      </div>
+
+
+      <a
+        class="project-link"
+        href="https://github.com/mtaham84/My-Raycaster-Launch"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="View on GitHub"
+        data-fa="مشاهده در گیت‌هاب">
+
+        View on GitHub
+
+      </a>
+
+
+    </li>
+
 
   </ul>
+
+
 </section>
 
 
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
-  <p>&copy; 2025 Taha Mousavi. All rights reserved.</p>
-  <p>Website designed and developed by Taha Mousavi.</p>
+
+
+  <p>
+
+    Taha Mousavi
+
+  </p>
+
+
+  <p
+    data-en="© 2026 · All rights reserved."
+    data-fa="© ۲۰۲۶ · تمامی حقوق محفوظ است.">
+
+    © 2026 · All rights reserved.
+
+  </p>
+
+
+  <p
+    data-en="Designed & developed with passion by Taha Mousavi."
+    data-fa="طراحی و توسعه با علاقه توسط طاها موسوی.">
+
+    Designed & developed with passion by Taha Mousavi.
+
+  </p>
+
+
 </footer>
 
+
+<script src="Lang.JS" defer></script>
+
+
 </body>
+
 </html>
