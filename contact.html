@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-en="Contact | Taha Mousavi" data-fa="تماس | طاها موسوی">Contact | Taha Mousavi</title>
+  <title data-en="Contact | Taha Mousavi" data-fa="تماس | طاها موسوی">تماس | طاها موسوی</title>
+  <meta name="description"
+        data-en="Tell me about your business website, online store, or custom software project."
+        data-fa="درباره پروژه وب‌سایت، فروشگاه اینترنتی یا سیستم اختصاصی کسب‌وکارتان با من صحبت کنید."
+        content="درباره پروژه وب‌سایت، فروشگاه اینترنتی یا سیستم اختصاصی کسب‌وکارتان با من صحبت کنید.">
   <link rel="stylesheet" href="navbar.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +20,17 @@
 <div class="navbar">
   <span class="logo">Taha Mousavi</span>
   <ul>
-    <li><a href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
-    <li><a href="about.html" data-en="About" data-fa="درباره من">About</a></li>
-    <li><a href="education.html" data-en="Education" data-fa="تحصیلات">Education</a></li>
-    <li><a href="portfolio.html" data-en="Portfolio" data-fa="نمونه‌کارها">Portfolio</a></li>
-    <li><a href="about.html#skills-more" data-en="Technical Skills" data-fa="مهارت‌های فنی">Technical Skills</a></li>
-    <li><a href="contact.html" class="active" data-en="Contact" data-fa="تماس">Contact</a></li>
+    <li><a href="index.html" data-en="Home" data-fa="خانه">خانه</a></li>
+    <li><a href="index.html#services" data-en="Services" data-fa="خدمات">خدمات</a></li>
+    <li><a href="portfolio.html" data-en="Projects" data-fa="نمونه‌کارها">نمونه‌کارها</a></li>
+    <li><a href="about.html" data-en="About" data-fa="درباره من">درباره من</a></li>
+    <li><a href="education.html" data-en="Education" data-fa="تحصیلات">تحصیلات</a></li>
+    <li><a href="contact.html" class="active" data-en="Contact" data-fa="تماس">تماس</a></li>
   </ul>
   <div class="navbar-controls">
     <div class="lang-toggle" role="group" aria-label="Language">
-      <button type="button" data-lang="en" class="is-active">EN</button>
-      <button type="button" data-lang="fa">FA</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="fa" class="is-active">FA</button>
     </div>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -35,17 +39,79 @@
 </div>
 
 <section class="contact-section">
-  <h2 class="h2txt" data-en="Let's Connect" data-fa="بیایید در ارتباط باشیم">Let's Connect</h2>
+  <h2 class="h2txt" data-en="Tell Me About Your Project" data-fa="درباره پروژه‌تان بگویید">درباره پروژه‌تان بگویید</h2>
 
-  <p style="text-align:center;color:var(--ink-soft);margin-bottom:40px;font-size:1.1rem;" data-en="You can reach me through any of the following channels." data-fa="از طریق هر یک از کانال‌های زیر می‌توانید با من در ارتباط باشید.">
-    You can reach me through any of the following channels.
+  <p style="text-align:center;color:var(--ink-soft);margin-bottom:40px;font-size:1.1rem;" data-en="Fill in a few details about your business and project, or reach me directly through any of the channels below." data-fa="چند نکته درباره کسب‌وکار و پروژه‌تان بنویسید، یا مستقیماً از طریق هر یک از کانال‌های زیر با من در ارتباط باشید.">
+    چند نکته درباره کسب‌وکار و پروژه‌تان بنویسید، یا مستقیماً از طریق هر یک از کانال‌های زیر با من در ارتباط باشید.
+  </p>
+
+  <!-- ================= LEAD-GENERATION FORM ================= -->
+  <form class="lead-form" id="project-request-form">
+
+    <div>
+      <label for="lf-name" data-en="Name" data-fa="نام">نام</label>
+      <input type="text" id="lf-name" name="name" required
+             data-en-placeholder="Your name" data-fa-placeholder="نام شما"
+             placeholder="نام شما">
+    </div>
+
+    <div>
+      <label for="lf-business" data-en="Business Name" data-fa="نام کسب‌وکار">نام کسب‌وکار</label>
+      <input type="text" id="lf-business" name="business"
+             data-en-placeholder="Your business name" data-fa-placeholder="نام کسب‌وکار شما"
+             placeholder="نام کسب‌وکار شما">
+    </div>
+
+    <div>
+      <label for="lf-type" data-en="Project Type" data-fa="نوع پروژه">نوع پروژه</label>
+      <select id="lf-type" name="project_type">
+        <option data-en="Online Store" data-fa="فروشگاه اینترنتی">فروشگاه اینترنتی</option>
+        <option data-en="Corporate Website" data-fa="وب‌سایت شرکتی">وب‌سایت شرکتی</option>
+        <option data-en="Service Website" data-fa="سایت خدماتی">سایت خدماتی</option>
+        <option data-en="Booking System" data-fa="سیستم رزرو">سیستم رزرو</option>
+        <option data-en="CRM / Admin Panel" data-fa="CRM / پنل مدیریت">CRM / پنل مدیریت</option>
+        <option data-en="Custom Project" data-fa="پروژه اختصاصی">پروژه اختصاصی</option>
+        <option data-en="Other" data-fa="سایر">سایر</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="lf-budget" data-en="Approximate Budget" data-fa="بودجه تقریبی">بودجه تقریبی</label>
+      <input type="text" id="lf-budget" name="budget"
+             data-en-placeholder="Optional" data-fa-placeholder="اختیاری"
+             placeholder="اختیاری">
+    </div>
+
+    <div>
+      <label for="lf-phone" data-en="Phone / Contact Method" data-fa="شماره تماس / راه ارتباطی">شماره تماس / راه ارتباطی</label>
+      <input type="text" id="lf-phone" name="phone" required
+             data-en-placeholder="Phone, Telegram, or WhatsApp" data-fa-placeholder="شماره تماس، تلگرام یا واتس‌اپ"
+             placeholder="شماره تماس، تلگرام یا واتس‌اپ">
+    </div>
+
+    <div class="field-full">
+      <label for="lf-details" data-en="Project Description" data-fa="توضیحات پروژه">توضیحات پروژه</label>
+      <textarea id="lf-details" name="details" required
+                data-en-placeholder="Tell me a bit about what you need"
+                data-fa-placeholder="کمی درباره نیاز خود توضیح دهید"
+                placeholder="کمی درباره نیاز خود توضیح دهید"></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary" data-en="Request a Consultation" data-fa="درخواست مشاوره پروژه">درخواست مشاوره پروژه</button>
+
+  </form>
+
+  <p id="lead-form-note" style="text-align:center;color:var(--ink-muted);font-size:13px;margin-bottom:48px;"
+     data-en="Submitting opens your email app with the details pre-filled, ready to send to me."
+     data-fa="با ارسال فرم، اپلیکیشن ایمیل شما با جزئیات پرشده باز می‌شود تا برایم ارسال کنید.">
+     با ارسال فرم، اپلیکیشن ایمیل شما با جزئیات پرشده باز می‌شود تا برایم ارسال کنید.
   </p>
 
   <div class="contact-info">
     <!-- Email -->
     <div class="contact-card">
       <span class="contact-card-icon"><i class="fas fa-envelope"></i></span>
-      <div class="contact-card-label" data-en="Email" data-fa="ایمیل">Email</div>
+      <div class="contact-card-label" data-en="Email" data-fa="ایمیل">ایمیل</div>
       <div class="contact-card-value">
         <a href="mailto:mtaha38461@gmail.com">mtaha38461@gmail.com</a>
       </div>
@@ -54,7 +120,7 @@
     <!-- GitHub -->
     <div class="contact-card">
       <span class="contact-card-icon"><i class="fab fa-github"></i></span>
-      <div class="contact-card-label" data-en="GitHub" data-fa="گیت‌هاب">GitHub</div>
+      <div class="contact-card-label" data-en="GitHub" data-fa="گیت‌هاب">گیت‌هاب</div>
       <div class="contact-card-value">
         <a href="https://github.com/mtaham84" target="_blank">github.com/mtaham84</a>
       </div>
@@ -63,7 +129,7 @@
     <!-- LinkedIn -->
     <div class="contact-card">
       <span class="contact-card-icon"><i class="fab fa-linkedin-in"></i></span>
-      <div class="contact-card-label" data-en="LinkedIn" data-fa="لینکدین">LinkedIn</div>
+      <div class="contact-card-label" data-en="LinkedIn" data-fa="لینکدین">لینکدین</div>
       <div class="contact-card-value">
         <a href="https://www.linkedin.com/in/taha-mousavi-875988193/" target="_blank">linkedin.com/in/taha-mousavi</a>
       </div>
@@ -72,7 +138,7 @@
     <!-- Telegram -->
     <div class="contact-card">
       <span class="contact-card-icon"><i class="fab fa-telegram-plane"></i></span>
-      <div class="contact-card-label" data-en="Telegram" data-fa="تلگرام">Telegram</div>
+      <div class="contact-card-label" data-en="Telegram" data-fa="تلگرام">تلگرام</div>
       <div class="contact-card-value">
         <a href="https://t.me/T_Mousavi84" target="_blank">@T_Mousavi84</a>
       </div>
@@ -82,9 +148,62 @@
 
 <footer class="site-footer">
   <p>Taha Mousavi</p>
-  <p data-en="© 2026 · All rights reserved." data-fa="© ۲۰۲۶ · تمامی حقوق محفوظ است.">&copy; 2026 · All rights reserved.</p>
+  <p data-en="© 2026 · All rights reserved." data-fa="© ۲۰۲۶ · تمامی حقوق محفوظ است.">© ۲۰۲۶ · تمامی حقوق محفوظ است.</p>
 </footer>
 
 <script src="Lang.JS" defer></script>
+<script>
+(function () {
+  "use strict";
+  var form = document.getElementById("project-request-form");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var isFa = (window.getSiteLang ? window.getSiteLang() : "fa") === "fa";
+    var data = new FormData(form);
+    var name = (data.get("name") || "").toString().trim();
+    var business = (data.get("business") || "").toString().trim();
+    var type = (data.get("project_type") || "").toString().trim();
+    var budget = (data.get("budget") || "").toString().trim();
+    var phone = (data.get("phone") || "").toString().trim();
+    var details = (data.get("details") || "").toString().trim();
+
+    var subject = isFa
+      ? "درخواست پروژه از " + (name || "وب‌سایت")
+      : "Project Request from " + (name || "website");
+
+    var lines = isFa
+      ? [
+          "نام: " + name,
+          "نام کسب‌وکار: " + (business || "-"),
+          "نوع پروژه: " + type,
+          "بودجه تقریبی: " + (budget || "-"),
+          "شماره تماس / راه ارتباطی: " + phone,
+          "",
+          "توضیحات پروژه:",
+          details
+        ]
+      : [
+          "Name: " + name,
+          "Business Name: " + (business || "-"),
+          "Project Type: " + type,
+          "Approximate Budget: " + (budget || "-"),
+          "Phone / Contact Method: " + phone,
+          "",
+          "Project Description:",
+          details
+        ];
+
+    var body = lines.join("\n");
+
+    window.location.href =
+      "mailto:mtaha38461@gmail.com" +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+  });
+})();
+</script>
 </body>
 </html>

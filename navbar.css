@@ -2309,3 +2309,348 @@ body.lang-fa .project-detail {
 
 
 }
+
+
+/* ============================================
+   BUSINESS SECTIONS — Services / Trust / Why /
+   Process / CTA / Lead Form / Project Groups
+   Added for the business-focused repositioning.
+   Reuses existing design tokens (--card-bg, etc.)
+   ============================================ */
+
+/* ---- Trust strip ---- */
+.trust-strip {
+  max-width: 1300px;
+  margin: 0 auto 10px;
+  padding: 18px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 28px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+}
+
+.trust-strip span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.trust-strip span::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+
+/* ---- Section shell (used by services / why / process / cta) ---- */
+.section-shell {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-head {
+  max-width: 720px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.section-head .section-kicker {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.section-head p {
+  margin-top: 14px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ---- Services ---- */
+.services-grid,
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.service-card,
+.why-card {
+  position: relative;
+  padding: 32px 28px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  transition: var(--transition);
+}
+
+.service-card:hover,
+.why-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.service-card h3,
+.why-card h3 {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+body.lang-fa .service-card h3,
+body.lang-fa .why-card h3 {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.service-card > p,
+.why-card p {
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.service-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.service-features li {
+  padding: 6px 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  color: var(--ink-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body.lang-fa .service-features {
+  direction: rtl;
+}
+
+/* ---- Process (stepper) ---- */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  counter-reset: process;
+}
+
+.process-step {
+  position: relative;
+  padding: 28px 24px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+}
+
+.process-step .process-number {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--violet-soft);
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+body.lang-fa .process-step .process-number {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.process-step h3 {
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.process-step p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ---- CTA band ---- */
+.cta-band {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 40px;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border-hover);
+  background: var(--aurora-gradient-soft), var(--card-bg);
+  backdrop-filter: blur(20px);
+}
+
+.cta-band h2 {
+  margin-bottom: 16px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 4vw, 38px);
+  color: var(--ink);
+}
+
+body.lang-fa .cta-band h2 {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.cta-band p {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+
+.cta-band .hero-cta {
+  justify-content: center;
+}
+
+/* ---- Featured project teaser cards (home page) ---- */
+.project-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-bottom: 36px;
+}
+
+.project-teaser-card {
+  padding: 28px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-teaser-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-teaser-category {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 5px 12px;
+  border-radius: 50px;
+  background: rgba(138, 107, 255, 0.14);
+  color: var(--violet-soft);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.project-teaser-card h3 {
+  color: var(--ink);
+  font-size: 19px;
+  font-family: 'Playfair Display', serif;
+}
+
+body.lang-fa .project-teaser-card h3 {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.project-teaser-card p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+  flex-grow: 1;
+}
+
+.teaser-more-link {
+  text-align: center;
+}
+
+/* ---- Other-projects group heading inside portfolio.html ---- */
+.projects-group-heading {
+  grid-column: 1 / -1;
+  margin: 12px 0 4px;
+  padding-top: 24px;
+  border-top: 1px solid var(--card-border);
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--ink-soft);
+}
+
+body.lang-fa .projects-group-heading {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+/* ---- Lead-generation contact form ---- */
+.lead-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+.lead-form .field-full {
+  grid-column: 1 / -1;
+}
+
+.lead-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink-soft);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--card-border);
+  background: rgba(255,255,255,0.03);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14.5px;
+  transition: var(--transition-fast);
+}
+
+.lead-form input:focus,
+.lead-form select:focus,
+.lead-form textarea:focus {
+  outline: none;
+  border-color: var(--card-border-hover);
+  background: rgba(255,255,255,0.05);
+}
+
+.lead-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.lead-form button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .cta-band { padding: 40px 22px; }
+  .trust-strip { padding: 14px 18px; gap: 10px 18px; justify-content: flex-start; }
+}
